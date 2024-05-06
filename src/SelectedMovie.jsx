@@ -41,7 +41,7 @@ export function SelectedMovie({
         setIsLoading(true);
         setError("");
         let res = await fetch(
-          `http://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedId}`
+          `https://www.omdbapi.com/?apikey=${API_KEY}&i=${selectedId}`
         );
 
         if (!res.ok) throw new Error("there is an error");
