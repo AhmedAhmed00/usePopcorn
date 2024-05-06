@@ -93,7 +93,7 @@ export function SelectedMovie({
         <ErorrMessage message={error} />
       ) : (
         <>
-          <div className="detail">
+          <div className="details">
             {isLoading ? (
               <div className="loader">Loading....</div>
             ) : (
@@ -124,7 +124,7 @@ export function SelectedMovie({
                   />
                 </div>
 
-                <div className="details">  <section >
+                <section >
                   <button onClick={handleAdd} className="btn-add">
                     + add to list
                   </button>
@@ -139,7 +139,7 @@ export function SelectedMovie({
 
                   </p>
                 </section>
-                </div>
+
 
               </>
             )}
